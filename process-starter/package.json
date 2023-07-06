@@ -1,0 +1,27 @@
+{
+  "name": "process-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "dev": "npx ts-node ./src/index.ts",
+    "build": "rimraf ./dist && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bunyan": "^1.8.8",
+    "@types/node": "^20.4.0",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.15",
+    "elastic-apm-node": "^3.47.0",
+    "zeebe-node": "^8.2.5"
+  }
+}
